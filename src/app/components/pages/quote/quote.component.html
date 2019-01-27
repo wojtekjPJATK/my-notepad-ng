@@ -1,0 +1,12 @@
+<div *ngIf="loading; else quoteDiv">
+  <div class="spinner spinner-lg">Loading...</div>
+</div>
+
+<ng-template #quoteDiv>
+  <div class="quote">
+    <h1>{{ quote.title }}</h1>
+    <h2>by {{ quote.author }}</h2>
+    <p>{{ quote.quote }}</p>
+    <small> {{ quote.copyright }}</small>
+  </div>
+</ng-template>

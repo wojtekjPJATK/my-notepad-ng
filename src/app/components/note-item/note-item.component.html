@@ -1,0 +1,12 @@
+<div [ngClass]="setClasses()">
+  <div class="card-block">
+    <div class="card-title">{{ note.title }}</div>
+    <div class="card-text">{{ note.body }}</div>
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-info btn-icon" (click)="delete(note)">
+      <clr-icon shape="trash"></clr-icon>
+      Delete
+    </button>
+  </div>
+</div>
