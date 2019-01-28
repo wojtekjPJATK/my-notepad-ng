@@ -29,7 +29,6 @@ export class AddNoteComponent {
       this.form.value.body,
       this.form.value.color
     );
-    this.ns.addNote(note);
     this.addNote.emit(note);
   }
 }

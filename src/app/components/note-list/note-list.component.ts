@@ -20,12 +20,10 @@ export class NoteListComponent implements OnInit {
   }
 
   deleteNote(note: Note) {
-    this.notes = this.notes.filter(item => item.id != note.id);
     this.noteService.deleteNote(note);
   }
 
   addNote(note: Note) {
-    this.notes.push(note);
     this.noteService.addNote(note);
   }
 }

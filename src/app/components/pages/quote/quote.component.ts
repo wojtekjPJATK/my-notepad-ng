@@ -20,7 +20,6 @@ export class QuoteComponent implements OnInit {
     this.qs.getQuote().subscribe(result => {
       this.quote = new Quote(result);
       this.loading = false;
-      console.log(this.quote);
     });
   }
 }

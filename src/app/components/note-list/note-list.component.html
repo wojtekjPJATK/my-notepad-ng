@@ -1,5 +1,5 @@
 <div class="clr-row">
-  <div class="clr-col-7 clr-offset-1">
+  <div class="clr-col-8 clr-offset-1">
     <div class="clr-row">
       <app-note-item
         *ngFor="let note of notes"
@@ -8,7 +8,7 @@
       ></app-note-item>
     </div>
   </div>
-  <div class="clr-col-4">
+  <div class="clr-col-3">
     <app-add-note
       [questions]="questions"
       (addNote)="addNote($event)"
